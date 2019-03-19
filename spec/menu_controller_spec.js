@@ -1,8 +1,10 @@
+
 const MenuController = require("../controllers/MenuController");
 
-describe("MenuController", () => {
-  beforeEach(() => {
+// #1
+ describe("MenuController", () => {
+   beforeEach(() => {
      this.menu = new MenuController();
    });
 
-});
+ });
