@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+ const Contact = require("../db/models").Contact;
 
 
 
@@ -11,6 +12,6 @@ module.exports = class ContactController {
   }
 
   addContact(name, phone){
-  this.contacts.push({name, phone});
+   return Contact.create({name,phone})
   }
   }
